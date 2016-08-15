@@ -6,8 +6,8 @@ Description: Display customer alliance reviews on your page
 Version:     0.2.0
 Author:      Thomas Horster
 Author URI:  http://thomashorster.de
-License:     Apache 2.0
-License URI: http://www.apache.org/licenses/LICENSE-2.0
+License:     GNU gpl 3.0
+License URI: http://choosealicense.com/licenses/gpl-3.0/
 Domain Path: /languages
 Text Domain: ca-reviews
 

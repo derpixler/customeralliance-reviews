@@ -1,7 +1,6 @@
 Plugin for customer alliance reviews
 ====
-copyright 2015 Thomas Horster
-all rights reserved
+made by Thomas Horster in 2015/2016
 
 Installation
 ----
@@ -16,4 +15,15 @@ How can I get hotel-id and access-key?
 ----
 
 Paste your link into the text field https://jsfiddle.net/shapeshifta/goaorutc/embedded/result/
-and it will extract both. Copy and paste them into your wordpress backend.
+and it will extract both. Copy and paste them into your wordpress backend (customer alliance settings).
+
+Wishlist
+---
+
+0. improve code
+1. create an install routine
+2. make css more customizable
+3. create own pagination and caching of results in database
+4. improve admin area
+5. add more languages
+6. integrate a template engine
