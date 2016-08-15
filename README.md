@@ -14,8 +14,8 @@ Installation
 How can I get hotel-id and access-key?
 ----
 
-Paste your link into the text field https://jsfiddle.net/shapeshifta/goaorutc/embedded/result/
-and it will extract both. Copy and paste them into your wordpress backend (customer alliance settings).
+Paste your link to the xml into the text field https://jsfiddle.net/shapeshifta/goaorutc/embedded/result/
+and it will extract both. Copy and paste the id and key into your wordpress backend (customer alliance settings).
 
 Wishlist
 ---
