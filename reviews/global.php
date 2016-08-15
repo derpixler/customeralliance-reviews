@@ -10,7 +10,7 @@
 require_once('helper-functions.php');
 
 // feed with global statistics
-$reviewsGlobal = getXML('https://api.customer-alliance.com/statistics?id=HiQu22916qkJ&access_key=ugoJuxIj5x3lARe&_locale=de');
+$reviewsGlobal = getXML('https://api.customer-alliance.com/statistics?id=qkJ&access_key=&_locale=de');
 $globalStatistics = $reviewsGlobal->globalStatistics;
 $portalStatistics = $reviewsGlobal->portalStatistics;
 

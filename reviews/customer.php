@@ -40,7 +40,6 @@ if (!isset($ca_options['id_key'], $ca_options['id_key'])) {
 }
 
 //feed with customer reviews
-//https://api.customer-alliance.com/reviews/list?version=4&id=HiQu22916qkJ&access_key=ugoJuxIj5x3lARe&_locale=
 $reviewsCustomer = getXML('https://api.customer-alliance.com/reviews/list?version=4&id=' . $ca_options['id_key'] . '&access_key=' . $ca_options['access_key'] . '&_locale=' . $locale . '&language=' . $locale . '&limit=' . $limit . '&offset=' . $offset);
 $howManyReviews = getXML('https://api.customer-alliance.com/reviews/list?version=4&id=' . $ca_options['id_key'] . '&access_key=' . $ca_options['access_key'] . '&_locale=' . $locale . '&language=' . $locale. '&limit=500');
 $business = $reviewsCustomer->business;
