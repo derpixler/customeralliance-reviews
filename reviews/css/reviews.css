@@ -1,0 +1,227 @@
+/**
+ * The CSS for the reviews.
+ *
+ * @package WordPress
+ * @subpackage Customer Alliance Reviews
+ * @since Customer Alliance Reviews 0.1.0
+ */
+
+/* helper classes */
+.hidden {
+    display: none;
+}
+
+/* grid */
+.unit {
+    float: left
+}
+
+.unit-right {
+    float: right
+}
+
+.size1of1 {
+    float: none
+}
+
+.size1of2 {
+    width: 50%
+}
+
+.size1of3 {
+    width: 33.33333% !important; /* sorry... */
+}
+
+.size2of3 {
+    width: 66.66666%
+}
+
+.size1of4 {
+    width: 25%
+}
+
+.size3of4 {
+    width: 75%
+}
+
+.size1of5 {
+    width: 20%
+}
+
+.size2of5 {
+    width: 40%
+}
+
+.size3of5 {
+    width: 60%
+}
+
+.size4of5 {
+    width: 80%
+}
+
+.last-unit {
+    float: none;
+    width: auto
+}
+
+/* ---------------*/
+/* reviews */
+.reviews {
+    font-size: .8em;
+    text-align: left;
+}
+
+.reviews .summary {
+    border: 0;
+}
+
+.reviews .summary td {
+    border: 0;
+    padding: 0 !important; /* sorry... */
+}
+
+.business {
+    margin: 5px 0 20px;
+    border-bottom: #333333;
+}
+
+.business .overview {
+    padding: 0 0 0 20px;
+}
+
+.reviews .review-summary {
+    border: 0;
+    margin: 0;
+}
+
+.reviews .review-summary td {
+    border-top: 0;
+}
+
+.reviews .review-summary .review-column {
+    text-align: right;
+}
+
+.reviews .review-summary .comment-column {
+    padding: 0 10px !important;
+}
+
+.customer-reviews {
+    margin-bottom: 20px;
+}
+
+.customer-review {
+    margin: 0;
+    border-radius: 3px;
+    padding-bottom: 20px;
+}
+
+.customer-review .review-head {
+    padding: 10px 0 0 20px;
+}
+
+.customer-review .review-head .review-rating {
+    top: 2px;
+}
+
+.customer-review .review-summary {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    margin: 10px 30px 10px 0;
+    background: #fff;
+    padding: 10px;
+}
+
+.customer-review .summary {
+    border: 0;
+}
+
+.customer-review.odd {
+    background: #F0F0F0;
+}
+
+.customer-review .details-toggle {
+    text-decoration: underline;
+    color: #666;
+}
+
+.customer-review .details-toggle:hover {
+    text-decoration: none;
+}
+
+.customer-review .cite {
+    border-left: 0;
+    font-size: 1.15em;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.customer-review .your-reply {
+    font-style: italic;
+    padding: 8px 15px !important;
+    border-left: 4px solid #de543e;
+    margin: 0 20px;
+    box-shadow: 1px 1px 4px 0 #c9c9c9;
+    background: #fff;
+}
+
+.review-rating {
+    display: inline-block;
+    width: 80px;
+    position: relative;
+    font-size: 27px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.review-rating .rating-percentage {
+    position: absolute;
+    color: #de543e;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pagination {
+    margin: 0 0 15px;
+    text-align: right;
+}
+
+.pagination .page {
+    padding: 4px 10px;
+    margin-right: 5px;
+    border: 1px solid #333333;
+    display: inline-block;
+    color: #333;
+}
+
+.pagination .page.current, .pagination .page:hover, .pagination .page:active {
+    color: #fff;
+    background: #de543e;
+}
+
+.pagination .page:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 980px){
+    .reviews .unit {
+        width: 100%;
+        float: none;
+    }
+    .reviews .review-summary .review-column {
+        text-align: left;
+    }
+
+    .reviews .review-summary .comment-column {
+        padding: 0 !important;
+    }
+
+    .business .overview {
+        margin-bottom: 10px;
+    }
+
+    .business .summary {
+        margin-left: 20px;
+    }
+}
