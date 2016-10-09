@@ -1,9 +1,47 @@
 {
   "name": "derpixler/customeralliance-reviews",
   "description": "Store and display customeralliance reviews in your WordPress",
-  "license": "GPL-2.0",
+  "keywords": [
+    "wordpress",
+    "multisite",
+    "plugin",
+    "reviews",
+    "customeralliance"
+  ],
+  "license": "GPL-3.0+",
   "type": "wordpress-plugin",
+  "homepage": "https://github.com/derpixler/customeralliance-reviews",
+  "authors": [
+    {
+      "name": "Thomas Horster",
+      "role": "Developer"
+    },
+    {
+      "name": "Rene Reimann",
+      "homepage": "http://rene-reimann.de",
+      "email": "inf@rene-reimann.de",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/derpixler/customeralliance-reviews/issues"
+  },
   "require": {
-    "php": ">=5.3"
+    "php": ">=5.3",
+    "composer/installers": "~1.0",
+    "dnaber/requisite": "1.0"
+  },
+  "require-dev": {
+    "brain/monkey": "^1.3",
+    "mockery/mockery": "*",
+    "inpsyde/monkery-test-case": "dev-master",
+    "mnsami/composer-custom-directory-installer": "1.1.*"
+  },
+  "extra": {
+    "installer-paths": {
+      "./src/requisite": [
+        "dnaber/requisite"
+      ]
+    }
   }
 }
