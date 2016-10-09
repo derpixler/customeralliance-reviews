@@ -1,0 +1,9 @@
+{
+  "name": "derpixler/customeralliance-reviews",
+  "description": "Store and display customeralliance reviews in your WordPress",
+  "license": "GPL-2.0",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.3"
+  }
+}
