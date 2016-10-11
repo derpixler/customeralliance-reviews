@@ -1,6 +1,6 @@
 <?php
 
-namespace wp_customer_alliance\reviews;
+namespace wp_customer_alliance\Reviews;
 
 use Requisite\Requisite;
 use Requisite\Rule\Psr4;
@@ -47,6 +47,8 @@ class Load {
 				__NAMESPACE__ // base namespace
 			)
 		);
+
+		new Init();
 
 	}
 

@@ -46,12 +46,12 @@ function wp_customer_alliance_reviews_activate() {
 
 	}else{
 
-		//load plugin
+		//require autoloader
 		require_once( plugin_dir_path( __FILE__ ) . 'src/load.php' );
 
-		if ( is_admin() ) {
-			new wp_customer_alliance\reviews\Load();
-		}
+		// init autoloader
+		new wp_customer_alliance\Reviews\Load();
+
 	}
 
 }
