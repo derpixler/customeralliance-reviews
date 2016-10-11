@@ -15,18 +15,20 @@ Text Domain:    ca-reviews
 
 defined( 'ABSPATH' ) or die();
 
+
 # Set the activation hook for a plugin.
-register_activation_hook( __FILE__, 'wp_customer_alliance_activate' );
+add_action( 'plugins_loaded', 'wp_customer_alliance_reviews_activate' );
 
 /**
  * Run on plugin activation, checks requirements.
  */
-function wp_customer_alliance_activate() {
+function wp_customer_alliance_reviews_activate() {
+
+	$required_php_version = '5.4.0';
 
 	$lang_dir = plugin_basename( __DIR__ ) . '/l10n/';
 	load_plugin_textdomain( 'ca-reviews', FALSE, $lang_dir );
 
-	$required_php_version = '5.4.0';
 	$correct_php_version  = version_compare( phpversion(), $required_php_version, '>=' );
 
 	if ( ! $correct_php_version ) {
@@ -47,7 +49,9 @@ function wp_customer_alliance_activate() {
 		//load plugin
 		require_once( plugin_dir_path( __FILE__ ) . 'src/load.php' );
 
+		if ( is_admin() ) {
+			new wp_customer_alliance\reviews\Load();
+		}
 	}
-
 
 }
