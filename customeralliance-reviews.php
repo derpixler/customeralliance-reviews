@@ -26,8 +26,11 @@ function wp_customer_alliance_reviews_activate() {
 
 	$required_php_version = '5.4.0';
 
+	$textdomain = 'wp_customer_alliance_reviews';
+
 	$lang_dir = plugin_basename( __DIR__ ) . '/l10n/';
-	load_plugin_textdomain( 'ca-reviews', FALSE, $lang_dir );
+
+	load_plugin_textdomain( $textdomain, FALSE, $lang_dir );
 
 	$correct_php_version  = version_compare( phpversion(), $required_php_version, '>=' );
 
@@ -50,7 +53,7 @@ function wp_customer_alliance_reviews_activate() {
 		require_once( plugin_dir_path( __FILE__ ) . 'src/load.php' );
 
 		// init autoloader
-		new wp_customer_alliance\Reviews\Load();
+		new wp_customer_alliance\Reviews\Load( $textdomain );
 
 	}
 

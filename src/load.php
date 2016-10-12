@@ -16,15 +16,17 @@ class Load {
 	/**
 	 * the constructor call init
 	 */
-	public function __construct(){
-		$this->init();
+	public function __construct( $textdomain ){
+		$this->init( $textdomain );
 	}
 
 	/**
 	 * Check if Requisite class declared
 	 * and set autoload rules
 	 */
-	private function init() {
+	private function init( $textdomain ) {
+
+		require_once __DIR__ . '/Functions.php';
 
 		/**
 		 * Load the Requisite library. Alternatively you can use composer's
@@ -48,7 +50,11 @@ class Load {
 			)
 		);
 
-		new Init();
+
+		$plugin = new Init();
+		$plugin->get_instance();
+		$plugin->setup( $textdomain );
+
 
 	}
 
