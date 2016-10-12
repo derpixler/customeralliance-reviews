@@ -15,8 +15,6 @@ class Init {
 	/**
 	 * Access this plugin’s working instance
 	 *
-	 * @wp-hook plugins_loaded
-	 * @since   02/12/1974
 	 * @return  object of this class
 	 */
 	public function get_instance() {
@@ -26,6 +24,9 @@ class Init {
 		return self::$instance;
 	}
 
+	/**
+	 * @param $setting_arguments a array of settings
+	 */
 	public function setup( $setting_arguments ){
 
 		if( array_key_exists( 'textdomain', $setting_arguments ) )
@@ -42,12 +43,22 @@ class Init {
 
 	}
 
+	/**
+	 * Set the textdomain of this plugin
+	 *
+	 * @param $textdomain
+	 */
 	private function set_textdomain( $textdomain ){
 
 		self::$instance->textdomain = $textdomain;
 
 	}
 
+	/**
+	 * Returns the textdomain of this plugin
+	 *
+	 * @return string
+	 */
 	public function get_textdomain(){
 
 		return self::$instance->textdomain;
