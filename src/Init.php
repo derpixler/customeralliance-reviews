@@ -26,9 +26,10 @@ class Init {
 		return self::$instance;
 	}
 
-	public function setup( $textdomain ){
+	public function setup( $setting_arguments ){
 
-		$this->set_textdomain( $textdomain );
+		if( array_key_exists( 'textdomain', $setting_arguments ) )
+			$this->set_textdomain( $setting_arguments[ 'textdomain' ] );
 
 		/*
 		 * Implement plugin admin settings page

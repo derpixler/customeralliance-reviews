@@ -52,8 +52,13 @@ class Load {
 
 
 		$plugin = new Init();
+
 		$plugin->get_instance();
-		$plugin->setup( $textdomain );
+
+		$plugin->setup( [
+			                "textdomain" => $textdomain
+		                ]
+		);
 
 
 	}
